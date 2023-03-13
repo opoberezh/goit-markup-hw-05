@@ -17,6 +17,7 @@
   --footer-text-color: #e7e9fc;
   --second-font: "Raleway", sans-serif;
   --filters-button-background: #f4f4fd;
+  --filters-btn-border: #E7E9FC;
   --btn-text-color: #4d5ae5;
   --filters-btn-text-hover-color: #ffffff;
   --filter-btn-background-hover-color: #404bbf;
@@ -608,14 +609,14 @@ button {
   width: 40px;
   height: 40px;
   fill: var(--text-social-link);
-  background-color:var(--footer-social-link-bg-color);
+  background-color:var(--footer-social-link-hover);
   border-radius: 50%;
   transition: background-color var(--transition-dur-func-btn-hover);
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-  background-color: var(--footer-social-link-hover);
+  background-color: var(--background-social-valid-fields);
 }
 /* ----------/footer--------- */
 
@@ -648,7 +649,7 @@ button {
 
 .filters-btn {  
   padding: 12px 24px;
-  border: 1px solid var(--filters-button-background);
+  border: 1px solid var(--filters-btn-border);
   border-radius: 4px;
 
   color: var(--btn-text-color);
@@ -735,8 +736,8 @@ button {
 
 }
 
-.works-item:hover .overlay,
-.works-item:focus .overlay {
+.works-link:hover .overlay,
+.works-link:focus .overlay {
   transform: translate(0, 0);
 }
 
